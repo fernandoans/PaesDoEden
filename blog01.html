@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pães caseiros">
+    <meta name="author" content="Fernando Anselmo">
+    <title>Pães do Éden</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/business-casual.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div id="app">
+    <pao-header></pao-header>
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <pao-titulo titulo="blog"></pao-titulo>
+                <div class="col-lg-12 text-center">
+                    <img class="img-responsive img-border img-full" src="img/blog01.jpg" alt="">
+                    <h2>Cumpanis <br> <small>20 Maio 2014</small></h2>
+                </div>
+                <div class="col-lg-12 text-justify">
+                    <p>A gente vai acabar conversando em outros momentos, e tudo tem seu
+                      tempo. O que importa é essa sensação que fica a cada troca que acontece,
+                      cum panis: repartindo o pão, a mesa, as ideias, as delícias. Compania - do latin
+                      cum+panis - conjunto de pessoas que comem seu pão juntamente,
+                      generalizou-se para pessoas que vão juntas.</p>
+                    <p>A palavra “companheiro” se origina de cum panis, que significa “com pão”,
+                      ou “com quem se divide o pão”. Cum panieiro. Companheiro - aquele que
+                      participa das ocupações, atividades, aventuras ou destino de outras pessoas,
+                      aquele que vela por uma pessoa, trazendo-lhe consolo ou ajuda.</p>
+                    <hr>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <ul class="pager">
+                        <li class="previous"><a href="blog.html">&larr; Inicial</a>
+                        </li>
+                        <li class="next"><a href="blog02.html">Próximo &rarr;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    <pao-footer></pao-footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/vue.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Iniciais para o Vue.js-->
+  <script type="text/javascript">
+  new Vue({
+    el: '#app'
+  })
+  </script>
+
+</body>
+</html>

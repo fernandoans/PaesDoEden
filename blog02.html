@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pães caseiros">
+    <meta name="author" content="Fernando Anselmo">
+    <title>Pães do Éden</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/business-casual.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div id="app">
+    <pao-header></pao-header>
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <pao-titulo titulo="blog"></pao-titulo>
+                <div class="col-lg-12 text-center">
+                    <img class="img-responsive img-border img-full" src="img/blog02.jpg" alt="">
+                    <h2>Glúten - Entendendo esta proteína<br><small>10 Setembro 2014</small></h2>
+                </div>
+                <div class="col-lg-12 text-justify">
+                    <p>Fizemos a opção de não incluir produtos sem glúten para evitar a
+                      contaminação cruzada. (Pesquisa revela que alimentos isentos dessa
+                      proteína estão sendo comercializados, em panificadoras do DF contaminados -
+                      <a href="http://cbn.globoradio.globo.com/programas/cbn-brasilia/2014/09/09/COM-GLUTEN-OU-SEM-GLUTEN.htm">matéria completa</a>)</p>
+                    <p>Os trechos a seguir foram copiados da revista <a href="http://veja.abril.com.br/noticia/saude/gluten-e-ruim-para-quem">Veja Abril</a></p>
+                    <p>"Vilã da vez na nutrição, a proteína tem sido eliminada da dieta de muita
+                      gente. Mas tirar o pão da mesa não é necessariamente benéfico à saúde. Se
+                      uma pessoa está acima do peso, não é porque está comendo glúten. E, se
+                      emagrece com a dieta sem glúten, não é pela ausência dele, mas pela redução
+                       do consumo de carboidrato", diz Vera Lúcia Sdepanian, chefe da disciplina de
+                       gastroenterologia pediátrica da Universidade Federal de São Paulo (Unifesp).</p>
+                      <p>O glúten, é verdade, pode ser prejudicial ao organismo – mas,
+                        comprovadamente, apenas entre aqueles que sofrem de doença celíaca, que
+                        afeta uma em cada 200 pessoas no mundo, segundo a Organização Mundial
+                        de Gastroenterologia, caso da atriz Ísis Valverde. Quando um celíaco consome
+                        glúten, seu sistema imunológico reconhece a proteína como um inimigo e
+                        reage contra ela. Esse ataque atinge o intestino delgado e prejudica a
+                        absorção de nutrientes.</p>
+                      <p>Há, ainda, pessoas que não sofrem de doença celíaca, mas que têm
+                        intolerância ao glúten. Elas passam mal quando consomem a proteína
+                        (diarreia e gases são sintomas comuns), mas não têm o intestino danificado
+                        e não sofrem de uma doença crônica. Esse quadro pode aparecer em qualquer
+                       um e em qualquer fase da vida, mas ainda não está claro o motivo pelo qual
+                       isso acontece.</p>
+                      <p>Para o restante da humanidade, ainda não se provou que comer um prato
+                        de macarrão prejudique a saúde. "O glúten é uma proteína complexa, mas o
+                        tubo digestivo de pessoas livresde doença celíaca está totalmente preparado
+                        para digeri-lo sem qualquer problema", diz Flávio Steinwurz,
+                        gastroenterologista do Hospital Albert Einstein e do Colégio Americano de
+                        Gastroenterologia. "Se o glúten prejudicasse a absorção de nutrientes no
+                        intestino de todas as pessoas, estaríamos todos desnutridos."</p>
+                      <p>Não há estudos que comprovem que o glúten seja o responsável pelas
+                        doenças cujo número de diagnósticos mais cresce da atualidade. É preciso ter
+                        cautela ao culpar apenas uma proteína por uma série de problemas que têm
+                        estrita relação com fatores como sedentarismo, obesidade, stress e
+                        tabagismo – esses, sim, comprovadamente vilões."</p>
+                      <hr>
+                </div>
+                <div class="col-lg-12 text-center">
+                    <ul class="pager">
+                        <li class="previous"><a href="blog01.html">&larr; Anterior</a>
+                        </li>
+                        <li class="next"><a href="blog03.html">Próximo &rarr;</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    <pao-footer></pao-footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/vue.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Iniciais para o Vue.js-->
+  <script type="text/javascript">
+  new Vue({
+    el: '#app'
+  })
+  </script>
+
+</body>
+</html>

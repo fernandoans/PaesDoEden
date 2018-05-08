@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Pães caseiros...">
+    <meta name="author" content="Fernando Anselmo">
+    <title>Pães do Éden</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/business-casual.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:100,300,400,600,700,100italic,300italic,400italic,600italic,700italic" rel="stylesheet" type="text/css">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div id="app">
+    <pao-header></pao-header>
+    <div class="container">
+        <div class="row">
+            <div class="box">
+                <pao-titulo titulo="blog"></pao-titulo>
+                <div class="col-lg-12 text-center" v-for="blog in blogs">
+                    <img class="img-responsive img-border img-full" v-bind:src="blog.foto">
+                    <h2>{{ blog.titulo }}
+                        <br>
+                        <small>{{ blog.dia }}</small>
+                    </h2>
+                    <p>{{ blog.texto }}</p>
+                    <a v-bind:href="blog.url" class="btn btn-default btn-lg">Leia mais</a>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+    <pao-footer></pao-footer>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/vue.js"></script>
+  <script src="js/main.js"></script>
+
+  <!-- Iniciais para o Vue.js-->
+  <script type="text/javascript">
+  new Vue({
+    el: '#app',
+    data: {
+      blogs: [{
+          foto: 'img/blog03.jpg',
+          titulo: 'Como congelar pães',
+          dia: '15 Dezembro 2014',
+          texto: 'É fundamental, para o congelamento, que os pães tenham sido feitos no dia. ' +
+            'Os pães devem ser embalados em sacos plásticos, tendo cuidado de retirar ' +
+            'todo ar. O congelamento pode ser já fatiado ou inteiro. Pode ser tanto em...',
+          url: 'blog03.html'
+        }, {
+          foto: 'img/blog02.jpg',
+          titulo: 'Glúten - Entendendo esta proteína',
+          dia: '10 Setembro 2014',
+          texto: 'Fizemos a opção de não incluir produtos sem glúten para evitar a ' +
+            'contaminação cruzada. (Pesquisa revela que alimentos isentos dessa ' +
+            'proteína estão sendo comercializados, em panificadoras do DF contaminados...',
+          url: 'blog02.html'
+        }, {
+          foto: 'img/blog01.jpg',
+          titulo: 'Cumpanis',
+          dia: '20 Maio 2014',
+          texto: 'A gente vai acabar conversando em outros momentos, e tudo tem seu ' +
+            'tempo. O que importa é essa sensação que fica a cada troca que acontece, ' +
+            'cum panis: repartindo o pão, a mesa, as ideias, as delícias. Compania - do latin...',
+          url: 'blog01.html'
+      }]
+    }
+  })
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Pães do Éden</title>
+    <link rel="stylesheet" href="css/page.css"></link>
+    <script src="js/vue.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+        <img-slider></img-slider>
+    </div>
+  <!-- template for the slider component -->
+  <template id="img-slider-template">
+    <div id="slider">
+      <input checked="" type="radio" name="slider" id="slide1" selected="false">
+      <input type="radio" name="slider" id="slide2" selected="false">
+      <input type="radio" name="slider" id="slide3" selected="false">
+      <input type="radio" name="slider" id="slide4" selected="false">
+      <div id="slides">
+        <div id="overflow">
+          <div class="inner">
+            <article>
+              <content select="img:nth-of-type(1)"><img src="img/carrousel01.jpg"></content>
+            </article>
+            <article>
+              <content select="img:nth-of-type(2)"><img src="img/carrousel02.jpg"></content>
+            </article>
+            <article>
+              <content select="img:nth-of-type(3)"><img src="img/carrousel03.jpg"></content>
+            </article>
+            <article>
+              <content select="img:nth-of-type(4)"> <img src="img/carrousel04.jpg"></content>
+            </article>
+          </div> <!-- .inner -->
+        </div> <!-- #overflow -->
+      </div>
+      <label for="slide1"></label>
+      <label for="slide2"></label>
+      <label for="slide3"></label>
+      <label for="slide4"></label>
+    </div>
+  </template>
+
+<script type="text/javascript">
+Vue.component('img-slider', {
+  template: '#img-slider-template',
+  replace: true
+})
+
+ new Vue({
+    el: '#app'
+  })
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                      
